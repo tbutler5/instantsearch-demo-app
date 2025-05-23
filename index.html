@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="shortcut icon" href="./favicon.png">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.5.1/themes/satellite-min.css" integrity="sha256-woeV7a4SRDsjDc395qjBJ4+ZhDdFn8AqswN1rlTO64E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="./src/index.css">
+  <link rel="stylesheet" href="./src/app.css">
+
+  <title>Demo-app</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header-title">
+      <a href="/">Demo-app</a>
+    </h1>
+  </header>
+
+  <div class="container">
+    <div id="sort-by"></div>
+    <div class="search-panel">
+      <div class="search-panel__filters">
+        <section>
+          <h3>Category</h3>
+          <div id="category-list"></div>
+        </section>
+
+        <section>
+          <h3>Brand</h3>
+          <div id="brand-list"></div>
+        </section>
+
+        <section>
+          <h3>Free Shipping</h3>
+          <div id="free-shipping-list"></div>
+        </section>
+
+        <section>
+          <h3>Rating</h3>
+          <div id="rating-list"></div>
+        </section>
+      </div>
+
+      <div class="search-panel__results">
+        <div id="searchbox"></div>
+        <div id="hits"></div>
+        <div id="pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.10.5/dist/algoliasearch-lite.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.78.3"></script>
+  <script src="./src/app.js"></script>
+</body>
+
+</html>
